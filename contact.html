@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Get Started - Strategy Bootstrap Template</title>
-  <meta name="description" content="Start your journey with us by filling out our get started form.">
-  <meta name="keywords" content="get started, strategy, bootstrap template">
+  <title>Contact Us - Strategy Bootstrap Template</title>
+  <meta name="description" content="Get in touch with us through our contact form or find our contact details and location.">
+  <meta name="keywords" content="contact us, strategy, bootstrap template, digital agency">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -36,29 +36,27 @@
   ======================================================== -->
 </head>
 
-<body class="get-started-page">
+<body class="contact-us-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/dtcpak logo.png" alt="Digital Transformation Company Pakistan Logo" class="img-fluid" style="max-height: 70px; width: auto;">
+        <img src="assets/img/dtcpak logo.png" alt="Your Software House Logo" class="img-fluid" style="max-height: 70px; width: auto;">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="service-details.html">Services</a></li>
           <li><a href="portfolio-details.html">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted active" href="get-started.html">Get Started</a>
+      <a class="btn-getstarted" href="get-started.html">Get Started</a>
     </div>
   </header>
 
@@ -67,30 +65,30 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade">
       <div class="container position-relative">
-        <h1>Get Started</h1>
-        <p>Ready to take the next step? Fill out the form below to start your journey with us.</p>
+        <h1>Contact Us</h1>
+        <p>We're here to help! Reach out to us through the form below or find our contact details and location.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Get Started</li>
+            <li class="current">Contact Us</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Get Started Section -->
-    <section id="get-started-section" class="get-started-section section">
-
+    <!-- Contact Us Section -->
+    <section id="contact-us-section" class="contact-us-section section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Get Started</h2>
-        <div><span>Let’s</span> <span class="description-title">Work Together</span></div>
+        <h2>Contact Us</h2>
+        <div><span>Connect</span> <span class="description-title">With Our Team</span></div>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <form action="forms/get-started.php" method="post" class="php-email-form">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+          <!-- Contact Form -->
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -102,21 +100,52 @@
                   <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                 </div>
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Tell us about your project" required></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Your Message" required></textarea>
                 </div>
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your request has been sent successfully. Thank you!</div>
-                  <button type="submit" class="btn btn-primary">Submit Request</button>
+                  <div class="sent-message">Your message has been sent successfully. Thank you!</div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
                 </div>
               </div>
             </form>
           </div>
+
+          <!-- Contact Details -->
+          <div class="col-lg-6">
+            <div class="contact-details">
+              <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Our Address</h3>
+                <p>A108 Adam Street, New York, NY 535022, United States</p>
+              </div>
+              <div class="info-box" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Us</h3>
+                <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              </div>
+              <div class="info-box" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p><a href="mailto:info@example.com">info@example.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="row mt-5">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="500">
+            <div class="map-placeholder">
+              <!-- Placeholder for map (e.g., Google Maps iframe or static image) -->
+              <img src="https://picsum.photos/1200/400?random=71" alt="Office Location Map" class="img-fluid" style="width: 100%; height: 400px; object-fit: cover;">
+              <p class="text-center mt-3">*Map placeholder: Integrate Google Maps API or use a static map image for the actual location.</p>
+            </div>
+          </div>
         </div>
       </div>
-
-    </section><!-- /Get Started Section -->
+    </section><!-- /Contact Us Section -->
 
   </main>
 
@@ -125,52 +154,54 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Digital Transformation Company Pakistan</span>
+            <span class="sitename">Strategy</span>
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="service-details.html">Services</a></li>
-            <li><a href="portfolio-details.html">Portfolio</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="service-details.html">Web Development</a></li>
-            <li><a href="service-details.html">Digital Marketing</a></li>
-            <li><a href="service-details.html">Graphic Designing</a></li>
-            <li><a href="service-details.html">SEO Services</a></li>
-            <li><a href="get-started.html">Consulting</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>Office # 1, 2nd Floor, Al-Hafeez Executive, Main Boulevard Gulberg, Lahore, Pakistan</p>
-          <p><strong>Phone:</strong> <span>+92 300 1234567</span></p>
-          <p><strong>Email:</strong> <span>info@dtcpak.com</span></p>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>info@example.com</span></p>
         </div>
       </div>
     </div>
+
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Digital Transformation Company Pakistan</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">DTC Pak</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
   </footer>
