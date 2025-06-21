@@ -3922,3 +3922,64 @@ section,
     text-align: center;
   }
 }
+
+/*--------------------------------------------------------------
+# Floating Contact Buttons
+--------------------------------------------------------------*/
+.floating-contact-buttons {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.floating-contact-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  font-size: 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+
+.floating-contact-buttons a.phone-btn {
+  background: #007bff;
+}
+
+.floating-contact-buttons a:hover {
+  background: #128c7e;
+  transform: scale(1.08);
+}
+
+.floating-contact-buttons a.phone-btn:hover {
+  background: #0056b3;
+}
+
+/* Move scroll-top to bottom right */
+#scroll-top.scroll-top {
+  right: 24px !important;
+  left: auto !important;
+  bottom: 24px !important;
+  position: fixed !important;
+  z-index: 9999;
+}
+
+@media (max-width: 767px) {
+  .floating-contact-buttons {
+    left: 12px;
+    bottom: 12px;
+  }
+  #scroll-top.scroll-top {
+    right: 12px !important;
+    bottom: 12px !important;
+  }
+}

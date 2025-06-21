@@ -1,0 +1,25 @@
+/* Web Development Exclusive Styles */
+.service-hero {
+  background: transparent;
+}
+.service-hero h1 {
+  color: #1976d2;
+  font-weight: 700;
+}
+.service-hero ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.packages-section .package-card {
+  border-width: 2px;
+  border-radius: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.packages-section .package-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(25,118,210,0.12);
+}
+.card-price {
+  font-size: 2rem;
+  font-weight: 600;
+}

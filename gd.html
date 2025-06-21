@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/gd.css">
 
   <!-- =======================================================
   * Template Name: Strategy
@@ -52,8 +53,8 @@
           <li><a href="portfolio-details.html">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="contact-us.html">Contact</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+          <!-- <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms and Conditions</a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -63,52 +64,80 @@
   </header>
 
   <main class="main">
-  <div class="tab-pane fade" id="service-tab-2" role="tabpanel" aria-labelledby="graphic-designing-tab">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="content-block">
-                          <h3>Creative Graphic Designing</h3>
-                          <p>Transform your brand with stunning visuals crafted by our expert designers.</p>
-                          <p>From logos to marketing materials, we deliver designs that captivate and convert.</p>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <img src="https://plus.unsplash.com/premium_photo-1663100678842-d89cb7b084ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhpY3MlMjBkZXNpZ25pbmd8ZW58MHx8MHx8fDA%3D" alt="Graphic Designing" class="img-fluid rounded">
-                      </div>
-                    </div>
-                    <div class="process-timeline mt-4">
-                      <div class="timeline-item">
-                        <div class="timeline-marker">01</div>
-                        <div class="timeline-content">
-                          <h4>Concept Development</h4>
-                          <p>Brainstorm and sketch initial design ideas.</p>
-                        </div>
-                      </div>
-                      <div class="timeline-item">
-                        <div class="timeline-marker">02</div>
-                        <div class="timeline-content">
-                          <h4>Design Creation</h4>
-                          <p>Craft high-quality graphics tailored to your brand.</p>
-                        </div>
-                      </div>
-                      <div class="timeline-item">
-                        <div class="timeline-marker">03</div>
-                        <div class="timeline-content">
-                          <h4>Review & Finalize</h4>
-                          <p>Refine based on feedback for a perfect outcome.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="benefits mt-4">
-                      <h4>Benefits</h4>
-                      <ul>
-                        <li>Unique brand identity</li>
-                        <li>Professional-grade visuals</li>
-                        <li>Enhanced customer appeal</li>
-                      </ul>
-                    </div>
-                  </div>
-
+    <div class="tab-pane fade" id="service-tab-2" role="tabpanel" aria-labelledby="graphic-designing-tab">
+      <section class="service-hero py-5 bg-light text-center">
+        <div class="container">
+          <h1 class="display-5 fw-bold mb-3">Graphic Designing Services</h1>
+          <p class="lead mb-4">Elevate your brand with creative, professional, and memorable graphic design solutions. Our team crafts stunning visuals that capture attention and communicate your message with impact.</p>
+          <div class="row justify-content-center mb-4">
+            <div class="col-lg-8">
+              <p>We believe great design is the foundation of a strong brand. Our designers work closely with you to understand your vision and bring it to life—whether you need a new logo, a full brand identity, or eye-catching marketing materials. We blend creativity with strategy to ensure every design not only looks amazing but also drives results.</p>
+              <ul class="text-start mx-auto" style="max-width: 600px;">
+                <li><b>Logo & Brand Identity:</b> Make a lasting impression with a unique, memorable logo and cohesive branding.</li>
+                <li><b>Marketing Collateral:</b> From brochures to banners, we design materials that support your sales and marketing goals.</li>
+                <li><b>Social Media Graphics:</b> Stand out online with custom graphics tailored for every platform.</li>
+                <li><b>UI/UX Design:</b> Enhance user experience with intuitive, visually appealing interfaces for web and mobile.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="packages-section py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Graphic Design Packages</h2>
+          <div class="row g-4 justify-content-center">
+            <!-- Basic Package -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow package-card border-primary">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Basic</h3>
+                  <h4 class="card-price text-primary mb-3">$149<span class="fs-6">/project</span></h4>
+                  <ul class="list-unstyled mb-4">
+                    <li><i class="bi bi-check-circle text-success"></i> Logo Design</li>
+                    <li><i class="bi bi-check-circle text-success"></i> 1 Revision</li>
+                    <li><i class="bi bi-check-circle text-success"></i> Print-Ready Files</li>
+                  </ul>
+                  <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+              </div>
+            </div>
+            <!-- Standard Package -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow package-card border-success">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Standard</h3>
+                  <h4 class="card-price text-success mb-3">$299<span class="fs-6">/project</span></h4>
+                  <ul class="list-unstyled mb-4">
+                    <li><i class="bi bi-check-circle text-success"></i> Logo + Business Card</li>
+                    <li><i class="bi bi-check-circle text-success"></i> 3 Revisions</li>
+                    <li><i class="bi bi-check-circle text-success"></i> Social Media Kit</li>
+                  </ul>
+                  <a href="contact.html" class="btn btn-success">Get Started</a>
+                </div>
+              </div>
+            </div>
+            <!-- Premium Package -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow package-card border-warning">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Premium</h3>
+                  <h4 class="card-price text-warning mb-3">$499<span class="fs-6">/project</span></h4>
+                  <ul class="list-unstyled mb-4">
+                    <li><i class="bi bi-check-circle text-success"></i> Full Brand Identity</li>
+                    <li><i class="bi bi-check-circle text-success"></i> Unlimited Revisions</li>
+                    <li><i class="bi bi-check-circle text-success"></i> All Source Files</li>
+                    <li><i class="bi bi-check-circle text-success"></i> Priority Support</li>
+                  </ul>
+                  <a href="contact.html" class="btn btn-warning text-white">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ...existing code for process-timeline, benefits, etc... -->
+    </div>
+    <!-- ...existing code after tab-pane... -->
   </main>
 
   <footer id="footer" class="footer">
