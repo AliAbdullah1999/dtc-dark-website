@@ -28,33 +28,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- Custom CSS for Enhanced UI -->
-  <style>
-    :root {
-      --primary: #0055a4;
-      --secondary: #f8f9fa;
-      --accent: #00aaff;
-    }
-    .page-title { position: relative; color: white; padding: 100px 0; }
-    .page-title::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1; }
-    .page-title .container { position: relative; z-index: 2; }
-    .section-title { font-family: 'Raleway', sans-serif; font-weight: 800; color: var(--primary); }
-    .feature-box { transition: transform 0.3s, box-shadow 0.3s; background: white; border-radius: 10px; padding: 2rem; }
-    .feature-box:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
-    .feature-box .icon { font-size: 3rem; color: var(--accent); margin-bottom: 1rem; }
-    .timeline-item { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
-    .timeline-item::before { content: ''; position: absolute; left: 1.5rem; top: 0; height: 100%; width: 6px; background: var(--accent); }
-    .timeline-icon { position: absolute; left: 0; top: 0; font-size: 1.8rem; background: white; padding: 0.8rem; border-radius: 50%; border: 3px solid var(--primary); }
-    .testimonial-item { background: var(--secondary); border-radius: 10px; padding: 2rem; position: relative; }
-    .testimonial-text { font-style: italic; color: #555; }
-    .testimonial-author img { width: 60px; height: 60px; object-fit: cover; margin-right: 1rem; }
-    .cta-section { background: var(--primary); color: white; padding: 3rem; border-radius: 10px; }
-    .btn-primary { background: var(--accent); border: none; transition: background 0.3s; }
-    .btn-primary:hover { background: #0088cc; }
-    @media (max-width: 768px) {
-      .timeline-item { padding-left: 3rem; }
-      .timeline-icon { font-size: 1.5rem; padding: 0.6rem; }
-    }
-  </style>
+  
 
   <!-- =======================================================
   * Template Name: Strategy
@@ -67,25 +41,28 @@
 
 <body class="about-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+   <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/dtcpak logo.png" alt="Digital Transformation Company Pakistan Logo" class="img-fluid" style="max-height: 70px; width: auto;">
-      </a>
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+<img src="assets/img/dtcpak logo.png" alt="Your Software House Logo" class="img-fluid" style="max-height: 70px; width: auto;">      </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="service-details.html">Services</a></li>
           <li><a href="portfolio-details.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+          <!-- <li><a href="#team">Team</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
       <a class="btn-getstarted" href="get-started.html">Get Started</a>
+
     </div>
   </header>
 
@@ -277,7 +254,7 @@
 
   </main>
 
-  <footer id="footer" class="footer">
+   <footer id="footer" class="footer">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -336,6 +313,7 @@
     </div>
 
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
