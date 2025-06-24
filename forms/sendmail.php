@@ -24,24 +24,11 @@ $headers = "From: $name <$email>\r\nReply-To: $email\r\n";
 // Validate required fields
 if ($name && $email && $message) {
     if (mail($to, $email_subject, $email_body, $headers)) {
-        // For AJAX or PHP email form
-        if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
-            echo json_encode(['success' => true, 'message' => 'Your message has been sent. Thank you!']);
-        } else {
-            echo 'Your message has been sent. Thank you!';
-        }
+        echo 'OK';
     } else {
-        if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
-            echo json_encode(['success' => false, 'message' => 'Failed to send email. Please try again.']);
-        } else {
-            echo 'Failed to send email. Please try again.';
-        }
+        echo 'Failed to send email. Please try again.';
     }
 } else {
-    if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
-        echo json_encode(['success' => false, 'message' => 'Please fill in all required fields.']);
-    } else {
-        echo 'Please fill in all required fields.';
-    }
+    echo 'Please fill in all required fields.';
 }
 ?>
