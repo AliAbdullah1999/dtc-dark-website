@@ -150,7 +150,9 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
 }
-
+.fluid-img{
+  border-radius: 10%;
+}
 .header .header-container {
   background: var(--surface-color);
   border-radius: 50px;
