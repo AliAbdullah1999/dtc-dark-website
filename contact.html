@@ -90,49 +90,78 @@
         <div class="row gy-5">
           <!-- Contact Form -->
           <div class="col-lg-6">
-            <form action="forms/sendmail.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Your Message" required></textarea>
-                </div>
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent successfully. Thank you!</div>
-                  <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
+            <div class="card h-100 shadow-sm">
+              <div class="card-body p-4">
+                <h5 class="card-title text-center mb-4 fw-bold">Send us a Message</h5>
+                <form action="forms/sendmail.php" method="post" class="php-email-form">
+                  <div class="row gy-3">
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="text" name="name" class="form-control" id="floatingName" placeholder="Your Name" required>
+                        <label for="floatingName">Your Name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Your Email" required>
+                        <label for="floatingEmail">Your Email</label>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" name="subject" id="floatingSubject" placeholder="Subject" required>
+                        <label for="floatingSubject">Subject</label>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-floating">
+                        <textarea class="form-control" name="message" id="floatingMessage" style="height: 120px" placeholder="Your Message" required></textarea>
+                        <label for="floatingMessage">Your Message</label>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center mt-4">
+                      <div class="loading d-none">
+                        <div class="spinner-border text-primary" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                      </div>
+                      <div class="error-message alert alert-danger d-none"></div>
+                      <div class="sent-message alert alert-success d-none">Your message has been sent successfully. Thank you!</div>
+                      <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill">
+                        <i class="bi bi-send me-2"></i>Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
 
           <!-- Contact Details -->
           <div class="col-lg-6">
             <div class="contact-details">
-              <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt"></i>
-                <h3>Our Address</h3>
-                 <p>Innovista, Defence Central  Library</p>
-          <p>Sunset Boulevard, Phase 2 Extension Road</p>
-          <p>Karachi</p>
+              <div class="card mb-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-body text-center py-3">
+                  <i class="bi bi-geo-alt mb-2" style="font-size: 1.5rem; color: var(--accent-color);"></i>
+                  <h5 class="card-title mb-2">Our Address</h5>
+                  <p class="card-text small mb-1">Innovista, Defence Central Library</p>
+                  <p class="card-text small mb-1">Sunset Boulevard, Phase 2 Extension Road</p>
+                  <p class="card-text small mb-0">Karachi</p>
+                </div>
               </div>
-              <div class="info-box" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone"></i>
-                <h3>Call Us</h3>
-          <p class="mt-4"><strong>Phone:</strong> <span>+92 303 2590468</span></p>
+              <div class="card mb-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-body text-center py-3">
+                  <i class="bi bi-telephone mb-2" style="font-size: 1.5rem; color: var(--accent-color);"></i>
+                  <h5 class="card-title mb-2">Call Us</h5>
+                  <p class="card-text small mb-0"><strong>Phone:</strong> <span>+92 303 2590468</span></p>
+                </div>
               </div>
-              <div class="info-box" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope"></i>
-                <h3>Email Us</h3>
-          <p><strong>Email:</strong> <span>dtcpakistani@gmail.com</span></p>
+              <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-body text-center py-3">
+                  <i class="bi bi-envelope mb-2" style="font-size: 1.5rem; color: var(--accent-color);"></i>
+                  <h5 class="card-title mb-2">Email Us</h5>
+                  <p class="card-text small mb-0"><strong>Email:</strong> <span>dtcpakistani@gmail.com</span></p>
+                </div>
               </div>
             </div>
           </div>
@@ -172,11 +201,11 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="service-details.html">Services</a></li>
+            <li><a href="portfolio-details.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
